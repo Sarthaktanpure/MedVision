@@ -105,7 +105,7 @@ MediVision-AI/
 
 ### 1️⃣ Clone Repository
 
-git clone https://github.com/your-username/MediVision-AI.git  
+git clone  https://github.com/Sarthaktanpure/MedVision/
 cd MediVision-AI  
 
 ---
