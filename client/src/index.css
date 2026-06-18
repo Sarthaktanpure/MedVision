@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --bg: #08111f;
+  --bg-soft: #0e1a2d;
+  --panel: rgba(12, 20, 35, 0.82);
+  --panel-2: rgba(18, 29, 49, 0.88);
+  --border: rgba(148, 163, 184, 0.18);
+  --text: #d6e0f0;
+  --muted: #91a4c6;
+  --accent: #68d6ff;
+  --accent-2: #86efac;
+  --warn: #fbbf24;
+  --danger: #fb7185;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #eef5ff;
+  --bg-soft: #ffffff;
+  --panel: rgba(255, 255, 255, 0.88);
+  --panel-2: rgba(248, 250, 252, 0.9);
+  --border: rgba(15, 23, 42, 0.12);
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #0369a1;
+  --accent-2: #059669;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(104, 214, 255, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(134, 239, 172, 0.12), transparent 24%),
+    linear-gradient(160deg, var(--bg) 0%, #08111f 45%, #0d1728 100%);
+  color: var(--text);
+  font-family:
+    "Aptos", "Segoe UI Variable", "Segoe UI", Inter, system-ui, -apple-system,
+    BlinkMacSystemFont, sans-serif;
+}
+
+:root[data-theme="light"] body {
+  background:
+    radial-gradient(circle at top left, rgba(104, 214, 255, 0.22), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(134, 239, 172, 0.18), transparent 26%),
+    linear-gradient(180deg, #f8fbff 0%, #eef5ff 40%, #dbeafe 100%);
+}
+
+::selection {
+  background: rgba(104, 214, 255, 0.3);
+}
+
+.glass {
+  background: var(--panel);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--border);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+.card-raise {
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.card-raise:hover {
+  transform: translateY(-2px);
+  border-color: rgba(104, 214, 255, 0.28);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.24);
+  border-radius: 999px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}

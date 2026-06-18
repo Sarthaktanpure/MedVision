@@ -1,0 +1,10 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="800" rx="48" fill="#08111F"/>
+<circle cx="980" cy="150" r="180" fill="#68D6FF" fill-opacity="0.10"/>
+<circle cx="180" cy="600" r="180" fill="#FBBF24" fill-opacity="0.10"/>
+<rect x="210" y="120" width="780" height="560" rx="40" stroke="#9AE6FF" stroke-opacity="0.18" stroke-width="6"/>
+<path d="M310 515C380 485 430 360 520 340C610 320 640 440 720 460C820 484 850 350 900 290" stroke="#E2F3FF" stroke-width="18" stroke-linecap="round"/>
+<path d="M315 400C410 330 490 480 590 410C680 347 760 290 885 410" stroke="#86EFAC" stroke-width="12" stroke-linecap="round"/>
+<circle cx="720" cy="460" r="18" fill="#FBBF24"/>
+<text x="92" y="730" fill="#91A4C6" font-family="Segoe UI, Arial" font-size="40">Demo MRI/CT Slice 02</text>
+</svg>
